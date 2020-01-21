@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Анна Макаричак](https://up.htmlacademy.ru/htmlcss/27/user/470691).
-* Наставник: `Неизвестно`.
+* Наставник: [Михон Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
