@@ -12,7 +12,7 @@
       <div class="header__link-wrapper">
         <a href="#" class="header__link">
           <img src="img/logo-technomart.svg" alt="Техномарт логогип" class="header__logo" />
-          <!-- to be changed to svg -->
+
         </a>
         <div class="header__search-wrapper">
           <label for="header-search">Поиск</label>
@@ -328,10 +328,6 @@
             class="contacts__image">
         </button>
 
-        <!-- below appears on the above button click -->
-        <img src="img/map-large.jpg" alt="Карта расположения магазина по адресу Большая Конюшенная улица д. 19"
-          class="contacts__image-large-map">
-
       </div>
       <button type="button" class="contacts__button button button--red">Заблудились? НапиШИТЕ НАМ!</button>
 
@@ -423,16 +419,26 @@
 
   <!------------------------ popup --------------------------->
 
-  <div class="basket-popup">
-    <div class="basket-popup__top">
+  <section class="basket-popup">
+    <!-- button to close the modal -->
+    <button type="button" class="basket-popup__close close-button">закрыть</button>
+    <div class="basket-popup-top">
       <!-- bg image for checkmark -->
       Товар добавлен в корзину!
     </div>
-    <div class="basket-popup__bottom">
+    <div class="basket-popup-bottom">
       <a href="#" class="basket-popup__button button button">ОФОРМИТЬ ЗАКАЗ</a>
       <button type="button" class="basket-popup__button button"></button>
     </div>
-  </div>
+  </section>
+
+  <!-- map-popup ( appears on the small map click )-->
+  <section class="map-modal">
+    <h2 class="visually-hidden">Карта расположения магазина</h2>
+    <img src="img/map-large.jpg" alt="Карта расположения магазина по адресу Большая Конюшенная улица д. 19"
+      class="map-modal__image">
+    <button type="button" class="map-modal__button close-button">Закрыть</button>
+  </section>
 </body>
 
 </html>

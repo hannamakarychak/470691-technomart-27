@@ -12,7 +12,6 @@
       <div class="header__link-wrapper">
         <a href="#" class="header__link">
           <img src="img/logo-technomart.svg" alt="Техномарт логогип" class="header__logo" />
-          <!-- to be changed to svg -->
         </a>
         <div class="header__search-wrapper">
           <label for="header-search">Поиск</label>
@@ -87,8 +86,8 @@
             <legend class="filter-form__legend">ЦЕНА:</legend>
             <input type="range" name="цена" min="0" max="30000" class="filter-form__input">
           </fieldset>
-          <span>0</span>
-          <span>30000</span>
+          <span class="filter-form__price-range">0</span>
+          <span class="filter-form__price-range">30000</span>
         </div>
 
         <div class="filters__manufacturer">
@@ -142,14 +141,14 @@
 
     <section class="catalog">
       <div class="catalog__filter">
-        <h2 class="catalog__header">СОРТИРОВКА:</h2>
+        <h3 class="catalog__header">СОРТИРОВКА:</h3>
         <ul class="catalog__filter-list">
           <li><button type="button" class="catalog__filter-button">ПО ЦЕНЕ</button></li>
           <li><button type="button" class="catalog__filter-button">ПО ТИПУ</button></li>
           <li><button type="button" class="catalog__filter-button">ПО ФУНКЦИОНАЛУ</button></li>
         </ul>
-        <button type="button" type="button" class="catalog__filter-button"></button>
-        <button type="button" type="button" class="catalog__filter-button"></button>
+        <button type="button" type="button" class="catalog__filter-button">Сортировать по возростанию</button>
+        <button type="button" type="button" class="catalog__filter-button">Сортировать по убыванию</button>
       </div>
 
       <h2 class="visually-hidden">Каталог товаров</h2>
@@ -211,17 +210,18 @@
     </div>
 
     <section class="product-info">
-      <h3 class="product-info__header"> ПАРА СЛОВ О ПЕРФОРАТОРАХ</h3 class="product-info" __header>
-      <p class="product-info__description">
-        Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
-        бетоне и камне.
-        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
-        шуруповерта и отбойного молотка.
-      </p>>
-      <p class="product-info__description">
-        В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут
-        совмещены отбойный молоток и ударная дрель.
-      </p>
+      <h2 class="product-info__header"> ПАРА СЛОВ О ПЕРФОРАТОРАХ</h3 class="product-info" __header>
+        <p class="product-info__description">
+          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+          кирпиче,
+          бетоне и камне.
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+          шуруповерта и отбойного молотка.
+        </p>>
+        <p class="product-info__description">
+          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут
+          совмещены отбойный молоток и ударная дрель.
+        </p>
     </section>
   </main>
 
