@@ -186,6 +186,11 @@ a {
   color: black;
 }
 
+.button--white {
+  background-color: white;
+  color: black;
+}
+
 .section-heading {
   display: flex;
   justify-content: space-between;
@@ -298,7 +303,7 @@ a {
   width: 150px;
   font-size: 17px;
   line-height: 20px;
-  padding: 11px 24px 11px 18px;
+  padding: 11px 24px 11px 14px;
 }
 
 .header__utility-button--secondary {
@@ -386,8 +391,8 @@ a {
   font-size: 16px;
   line-height: 21px;
   max-width: 263px;
-  padding-top: 4px;
-  padding-left: 50px;
+  padding-top: 2px;
+  padding-left: 52px;
   line-height: 1.44;
 }
 
@@ -400,6 +405,7 @@ a {
   font-size: 21px;
   line-height: 25px;
   padding: 7px 35px 7px 58px;
+  margin-left: 3px;
   border: 3px solid var(--white-four);
 }
 
@@ -424,7 +430,7 @@ a {
   color: #32425c;
   font-size: 14px;
   line-height: 17px;
-  margin: 9px 0;
+  margin: 8px -3px 8px 4px;
 }
 
 .header__log-in-wrapper {
@@ -1510,6 +1516,10 @@ POPULAR-ITEMS SECTION  */
   margin-right: 0;
 }
 
+.popular-items__list .catalog-list__item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .catalog__item {
   margin-right: 21px;
 }
@@ -1560,6 +1570,7 @@ POPULAR-ITEMS SECTION  */
   top: 50%;
   left: 50%;
   margin-left: -310px;
+  margin-top: -141px;
   background-color: var(--white-four);
   color: var(--black);
   border-top: 7px solid #ee3643;
@@ -1590,6 +1601,19 @@ POPULAR-ITEMS SECTION  */
 }
 
 .basket-popup__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 112px;
   background-color: #f1f1f1;
+}
+
+.basket-popup__button {
+  width: 220px;
+  height: 38px;
+  margin: 0 10px;
+}
+
+.basket-popup__button:nth-child(2) {
+  color: black;
 }
