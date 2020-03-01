@@ -124,23 +124,34 @@
     <div class="container">
       <div class="section-heading section-heading--primary">
         <h1 class="section-heading__text">
-          ПЕРФОРАТОРЫ
+          перфораторы
         </h1>
       </div>
       <div class="catalog-main__flex-container">
         <aside class="filters">
 
-          <h2 class="filters__heading">ФИЛЬТР:</h2>
+          <h2 class="filters__heading">фильтр:</h2>
 
-          <form action="#" method="GET" class="filters__form filter-form">
+          <form action="https://echo.htmlacademy.ru" method="GET" class="filters__form filter-form">
             <div class="filter-form__criterium">
               <fieldset class="filter-form__fieldset">
-                <legend class="filter-form__legend">ЦЕНА:</legend>
-                <input type="range" name="цена" min="0" max="30000"
-                  class="filter-form__input filter-form__input--checkbox visually-hidden">
+                <legend class="filter-form__legend">цена:</legend>
+                <div class="filter-form__range range">
+                  <div class="range__controls">
+                    <div class="range__scale">
+                      <div class="range__bar"></div>
+                    </div>
+                    <div class="range__toggle range__toggle-min"></div>
+                    <div class="range__toggle range__toggle-max"></div>
+                  </div>
+                  <div class="range__price-controls">
+                    <label class="range__price-label min-price"><input name="min-price" class="range__input"
+                        type="number" value="0"></label>
+                    <label class="range__price-label max-price"><input name="max-price" class="range__input"
+                        type="number" value="30000"></label>
+                  </div>
+                </div>
               </fieldset>
-              <span class="filter-form__price-range">0</span>
-              <span class="filter-form__price-range">30000</span>
             </div>
 
             <div class="filter-form__criterium">

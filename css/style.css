@@ -55,7 +55,7 @@ img {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", sans-serif, "PT Sans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-size: 17px;
   line-height: 17px;
   font-weight: 400;
@@ -389,7 +389,6 @@ a {
 .header__about {
   font-style: italic;
   font-size: 16px;
-  line-height: 21px;
   max-width: 263px;
   padding-top: 2px;
   padding-left: 52px;
@@ -519,6 +518,7 @@ a {
 
 .footer-navigation__link {
   display: inline-block;
+  vertical-align: middle;
   padding: 42px 30px 30px 30px;
 }
 
@@ -736,6 +736,7 @@ HEADER   */
 
 .breadcrumbs__icon {
   display: inline-block;
+  vertical-align: middle;
   height: 12px;
   width: 14px;
   background-image: url(../img/icons/icon-home.svg);
@@ -1337,8 +1338,13 @@ POPULAR-ITEMS SECTION  */
   padding: 0;
 }
 
-.filter-form__list {
+.filter-form__list,
+.filter-form__range {
   border-bottom: 1px solid #e5e5e5;
+}
+
+.filter-form__range {
+  padding-bottom: 25px;
 }
 
 .filter-form__list--no-decoration {
@@ -1358,26 +1364,22 @@ POPULAR-ITEMS SECTION  */
   position: relative;
   display: block;
   cursor: pointer;
+  line-height: 23px;
   user-select: none;
 }
 
 .filter-form__input--checkbox + .filter-form__label::before {
   content: "";
   position: absolute;
-  width: 23px;
+  width: 27px;
   height: 23px;
   left: -35px;
-  top: -3px;
+  top: 0px;
   background-image: url(../img/icons/checkbox-off.svg);
+  background-repeat: no-repeat;
 }
 
 .filter-form__input--checkbox:checked + .filter-form__label::before {
-  content: "";
-  position: absolute;
-  width: 23px;
-  height: 23px;
-  left: -35px;
-  top: -3px;
   background-image: url(../img/icons/checkbox-on.svg);
 }
 
@@ -1412,6 +1414,109 @@ POPULAR-ITEMS SECTION  */
   line-height: 30px;
 }
 
+/* RANGE  */
+.range {
+  width: 220px;
+}
+
+.filter-item__legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range__controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding: 39px 20px;
+  border-radius: 3px;
+  background-color: #f7f3ec;
+}
+
+.range__scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range__bar {
+  width: 152px;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range__toggle {
+  position: absolute;
+  top: 31px;
+  left: 0px;
+
+  width: 5px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range__toggle-min {
+  left: 20px;
+}
+
+.range__toggle-max {
+  left: 160px;
+}
+
+.min-price {
+  position: relative;
+}
+
+.min-price::after {
+  position: absolute;
+  content: "";
+  top: 17px;
+  right: -6px;
+  width: 10px;
+  height: 1px;
+  background-color: #444444;
+}
+
+.range__price-controls {
+  font-size: 0;
+}
+
+.range__price-label {
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.range__input {
+  /* width: 50%; */
+  padding: 8px 10px;
+  padding-left: 26px;
+  max-width: 95px;
+  min-height: 38px;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  border-radius: 3px;
+  border: none;
+  background-color: #f7f3ec;
+}
+
+.max-price {
+  text-align: right;
+}
+
 .filter-form__submit-button {
   padding: 11px 35.5px;
   margin-top: 75px;
@@ -1444,12 +1549,14 @@ POPULAR-ITEMS SECTION  */
 .catalog__filter {
   padding: 8px 17px 10px 16px;
   background-color: var(--light-pink);
+  border-radius: 3px;
 }
 
 .catalog__heading {
   flex-basis: 132px;
 }
 
+.filters__heading,
 .catalog__filter,
 .catalog__filter-list {
   display: flex;
@@ -1530,7 +1637,7 @@ POPULAR-ITEMS SECTION  */
 
 .page-number__current,
 .page-number__link {
-  padding: 9.5px 14.5px;
+  padding: 9px 14px;
   margin-left: 10px;
 }
 
