@@ -172,6 +172,11 @@ a {
   border-radius: 3px;
 }
 
+.button--minor:hover {
+  color: black;
+  border-bottom: 1px solid #ee3643;
+}
+
 .button--minor:focus {
   color: #ee3643;
   outline: none;
@@ -189,6 +194,27 @@ a {
 .button--white {
   background-color: white;
   color: black;
+}
+
+.button--border-accent {
+  min-height: 38px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  color: black;
+  border: 1px solid #e5e5e5;
+}
+
+.button--border-accent:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.button--border-accent:active {
+  border: 1px solid #ee3643;
+}
+
+.button--border-accent:focus {
+  color: white;
+  background-color: #ee3643;
 }
 
 .section-heading {
@@ -1598,18 +1624,13 @@ POPULAR-ITEMS SECTION  */
   fill: #c5c5c5;
 }
 
-/* .catalog__filter-icon {
-  fill: #c5c5c5;
-  border: none;
-} */
-
-/* .catalog__filter-icon:active {
-  fill: #ee3643;
+.catalog__filter-icon:hover {
+  fill: black;
 }
 
-.catalog__filter-icon:focus {
+.catalog__filter-icon:active {
   fill: #ee3643;
-} */
+}
 
 .filters {
   flex-basis: 220px;
