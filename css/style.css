@@ -306,7 +306,7 @@ a {
   padding: 11px 24px 11px 14px;
 }
 
-.header__utility-button--secondary {
+.header__utility-button--active {
   background-color: #ee3643;
 }
 
@@ -590,6 +590,7 @@ a {
 }
 
 .footer__address {
+  line-height: 24px;
   max-width: 330px;
   color: white;
   text-decoration: none;
@@ -1081,83 +1082,6 @@ POPULAR-ITEMS SECTION  */
 
 /* BENEFITS */
 
-.benefits__row {
-  display: flex;
-}
-
-.benefits__features-list {
-  flex-basis: 30%;
-}
-
-.benefits__services {
-  max-width: 430px;
-  position: relative;
-}
-
-.benefits__services:last-child {
-  flex-basis: 30%;
-  margin-left: 80px;
-}
-
-.benefits {
-  font-family: "PT Sans", sans-serif;
-  background-color: #f4f7f9;
-  padding: 65px 0 65px 0;
-}
-
-.benefits__heading {
-  color: #32425c;
-  font-size: 36px;
-  margin-bottom: 31px;
-}
-
-.benefits__description {
-  font-size: 13px;
-  margin: 0 0 66px 0;
-  line-height: 24px;
-}
-
-.benefits__description--delivery::after {
-  position: absolute;
-  content: "";
-  top: 22px;
-  left: 150px;
-  width: 468px;
-  height: 261px;
-  background-image: url(../img/delivery.png);
-}
-
-/* .benefits__services:nth-child(2),
-.benefits__services:nth-child(3) {
-  display: none;
-} */
-
-.benefits__description--guarantee::after {
-  position: absolute;
-  content: "";
-  top: 0px;
-  left: 205px;
-  width: 389px;
-  height: 283px;
-  background-image: url(../img/guarantee.png);
-  display: none;
-}
-
-.benefits__description--loan::after {
-  position: absolute;
-  content: "";
-  top: 0px;
-  left: 135px;
-  width: 465px;
-  height: 285px;
-  background-image: url(../img/credit.png);
-  display: none;
-}
-
-.benefits__button {
-  padding: 11px 45px;
-}
-
 .features-list {
   list-style: none;
   max-width: 240px;
@@ -1170,8 +1094,8 @@ POPULAR-ITEMS SECTION  */
   position: absolute;
   content: url(../img/shadow.png);
   width: 10px;
-  height: 51px;
-  top: -20px;
+  height: 279px;
+  top: -45px;
   left: 230px;
 }
 
@@ -1184,7 +1108,8 @@ POPULAR-ITEMS SECTION  */
   padding: 18px;
   background-color: #32425c;
   color: #ffffff;
-  border: 1px solid #293449;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  border: none;
 }
 
 .features-list__button:hover {
@@ -1195,6 +1120,7 @@ POPULAR-ITEMS SECTION  */
   color: #293449;
   background-color: #ffffff;
   border: none;
+  box-shadow: none;
 }
 
 .features-list__button:focus {
@@ -1202,18 +1128,85 @@ POPULAR-ITEMS SECTION  */
   background-color: #ffffff;
   outline: none;
   border: none;
+  box-shadow: none;
 }
 
 .features-list__item {
   display: block;
 }
 
+.benefits__row {
+  display: flex;
+  padding-top: 66px;
+  justify-content: stretch;
+}
+
+.benefits__features-list {
+  flex-basis: 30%;
+  padding: 0 0 99px;
+}
+
+.benefits__services {
+  margin-left: 80px;
+  flex: 1 1 auto;
+  background-repeat: no-repeat;
+  background-position: 100% 25px;
+}
+
+.benefits__services--delivery {
+  background-image: url(../img/delivery.png);
+  background-size: 468px 261px;
+}
+
+.benefits__services--guarantee {
+  background-image: url(../img/guarantee.png);
+  background-size: 389px 283px;
+}
+
+.benefits__services--loan {
+  background-image: url(../img/credit.png);
+  background-size: 465px 285px;
+}
+
+.benefits {
+  font-family: "PT Sans", sans-serif;
+  background-color: #f4f7f9;
+  padding: 65px 0 65px 0;
+}
+
+.benefits__heading {
+  color: #32425c;
+  font-size: 36px;
+  margin-bottom: 31px;
+  max-width: 430px;
+}
+
+.benefits__description {
+  font-size: 13px;
+  margin: 0;
+  line-height: 24px;
+  max-width: 398px;
+}
+
+.benefits__button {
+  padding: 11px 45px;
+  margin-top: 30px;
+}
 /* ABOUT SECTION */
 
 .about {
   display: flex;
   justify-content: space-between;
   padding: 64px 16px 86px 16px;
+}
+
+.about__company {
+  flex: 0 0 520px;
+  margin-right: 16px;
+}
+
+.about__contacts {
+  flex: 0 0 300px;
 }
 
 .about__heading {
@@ -1225,7 +1218,7 @@ POPULAR-ITEMS SECTION  */
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 24px;
-  margin: 0 0 34px 0;
+  margin: 15px 0 27px;
 }
 
 .about__description--narrow {
@@ -1260,6 +1253,7 @@ POPULAR-ITEMS SECTION  */
   background-color: #ffffff;
   color: #000000;
   border-top: 7px solid #ee3643;
+  z-index: 1;
 }
 
 .modal {
@@ -1267,6 +1261,10 @@ POPULAR-ITEMS SECTION  */
   position: fixed;
 
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.modal--show {
+  display: block;
 }
 .modal__close {
   position: absolute;

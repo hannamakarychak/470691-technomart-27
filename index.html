@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic"
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -28,20 +28,19 @@
           <label for="header-search" class="visually-hidden">Поиск</label>
           <input type="text" placeholder="Поиск" id="header-search" class="search-field__input" />
         </div>
-        <a href="#" class="header__utility-button">
+        <a href="#" class="header__utility-button header__utility-button--bookmark">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" class="header__icon">
             <path fill="#ffffff"
               d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z" />
           </svg>
-
           Закладки: 0
         </a>
-        <a href="#" class="header__utility-button">
+        <a href="#" class="header__utility-button header__utility-button--cart">
           <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="header__icon">
             <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
             <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" />
-            <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
-
+            <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
+          </svg>
           Корзина: 0
         </a>
         <a href="#" class="header__utility-button header__utility-button--accent">
@@ -69,7 +68,6 @@
               <path
                 d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
             </svg>
-
             Войти</a>
           <a href="#" class="header__log-in-button authorization-button">Регистрация</a>
         </div>
@@ -97,29 +95,20 @@
 
         <h2 class="visually-hidden">Категории</h2>
 
-        <ul class="categories-list">
+        <div class="categories-list">
           <div class="categories-list__row">
-            <li class="categories-list__item category category--1">
+            <div class="categories-list__item category category--1">
               <h3 class="category__heading">Материалы</h3>
               <a href="#" class="category__button button button--ghost">на любой вкус</a>
-              <span>
-              </span>
-              </a>
-            </li>
-            <li class="categories-list__item category category--2">
+            </div>
+            <div class="categories-list__item category category--2">
               <h3 class="category__heading">Инструмент</h3>
               <a href="#" class="category__button button button--ghost">на все случаи</a>
-              <span>
-              </span>
-              </a>
-            </li>
-            <li class="categories-list__item category category--3">
+            </div>
+            <div class="categories-list__item category category--3">
               <h3 class="category__heading">Техника</h3>
               <a href="#" class="category__button button button--ghost">для стройки</a>
-              <span>
-              </span>
-              </a>
-            </li>
+            </div>
           </div>
 
           <div class="categories-list__row">
@@ -127,7 +116,6 @@
               <div class="item-slider item-slider--first">
                 <h3 class="item-slider__heading">Дрели</h3>
                 <span class="item-slider__moto">Соседям на радость!</span>
-
                 <a href="catalog.html" class="item-slider__button button button--red">открыть каталог</a>
               </div>
               <!-- <div class="item-slider item-slider--second">
@@ -138,34 +126,17 @@
               </div> -->
             </div>
             <div class="categories__aside">
-              <li class="categories-list__side-item category category--4">
+              <div class="categories-list__side-item category category--4">
                 <h3 class="category__heading">Скидки 50 &#37;</h3>
                 <a href="#" class="category__button button button--ghost">на 350 товаров</a>
-                <div>
-                  <!-- for svg  -->
-                </div>
-                <span>
-
-                </span>
-                </a>
-              </li>
-              <li class="categories-list__side-item category category--5">
+              </div>
+              <div class="categories-list__side-item category category--5">
                 <h3 class="category__heading">Доставка</h3>
                 <a href="#" class="category__button button button--ghost">бесплатно</a>
-                <div>
-                  <!-- for svg  -->
-                </div>
-                <span>
-
-                </span>
-                </a>
-              </li>
+              </div>
             </div>
           </div>
-        </ul>
-
-
-
+        </div>
       </section>
 
       <section class="popular-items">
@@ -179,15 +150,19 @@
           <li class="catalog__item catalog-list__item catalog-list__item--new-tag">
             <img src="img/item.jpg" alt="Перфоратор BOSCH BFG 3000" class="catalog-list__image" />
             <div class="catalog-list__wrapper">
-              <button class="catalog-list__button-hidden button button--green">
+              <button class="catalog-list__button-hidden catalog-list__button-hidden--cart button button--green">
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                   class="catalog-list__cart-icon">
                   <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
                   <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" />
                   <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                 </svg>
-                Купить</button>
-              <button class="catalog-list__button-hidden button button--green-border">В закладки</button>
+                Купить
+              </button>
+              <button
+                class="catalog-list__button-hidden catalog-list__button-hidden--bookmark button button--green-border">
+                В закладки
+              </button>
             </div>
             <h3 class="catalog-list__heading">
               Перфоратор BOSCH BFG 9000
@@ -202,7 +177,7 @@
           <li class="catalog__item catalog-list__item catalog-list__item--new-tag">
             <img src="img/item.jpg" alt="Перфоратор BOSCH BFG 3000" class="catalog-list__image" />
             <div class="catalog-list__wrapper">
-              <button class="catalog-list__button-hidden button button--green">
+              <button class="catalog-list__button-hidden catalog-list__button-hidden--cart button button--green">
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                   class="catalog-list__cart-icon">
                   <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
@@ -210,7 +185,10 @@
                   <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                 </svg>
                 Купить</button>
-              <button class="catalog-list__button-hidden button button--green-border">В закладки</button>
+              <button
+                class="catalog-list__button-hidden catalog-list__button-hidden--bookmark button button--green-border">
+                В закладки
+              </button>
             </div>
             <h3 class="catalog-list__heading">
               Перфоратор BOSCH BFG 9000
@@ -225,7 +203,7 @@
           <li class="catalog__item catalog-list__item catalog-list__item--new-tag">
             <img src="img/item.jpg" alt="Перфоратор BOSCH BFG 3000" class="catalog-list__image" />
             <div class="catalog-list__wrapper">
-              <button class="catalog-list__button-hidden button button--green">
+              <button class="catalog-list__button-hidden button catalog-list__button-hidden--cart button--green">
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                   class="catalog-list__cart-icon">
                   <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
@@ -233,7 +211,10 @@
                   <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                 </svg>
                 Купить</button>
-              <button class="catalog-list__button-hidden button button--green-border">В закладки</button>
+              <button
+                class="catalog-list__button-hidden button catalog-list__button-hidden--bookmark button--green-border">
+                В закладки
+              </button>
             </div>
             <h3 class="catalog-list__heading">
               Перфоратор BOSCH BFG 9000
@@ -248,7 +229,7 @@
           <li class="catalog__item catalog-list__item catalog-list__item--new-tag">
             <img src="img/item.jpg" alt="Перфоратор BOSCH BFG 3000" class="catalog-list__image" />
             <div class="catalog-list__wrapper">
-              <button class="catalog-list__button-hidden button button--green">
+              <button class="catalog-list__button-hidden catalog-list__button-hidden--cart button button--green">
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                   class="catalog-list__cart-icon">
                   <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
@@ -256,7 +237,9 @@
                   <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                 </svg>
                 Купить</button>
-              <button class="catalog-list__button-hidden button button--green-border">В закладки</button>
+              <button
+                class="catalog-list__button-hidden catalog-list__button-hidden--bookmark button button--green-border">В
+                закладки</button>
             </div>
             <h3 class="catalog-list__heading">
               Перфоратор BOSCH BFG 9000
@@ -325,12 +308,33 @@
     <section class="benefits">
       <div class="container">
         <h2 class="visually-hidden">Преимущества</h2>
-        <div class="benefits__services">
-          <h3 class="benefits__section-heading heading section-heading--secondary">Сервисы</h3>
-          <p class="benefits__description">
-            Хороший интернет-магазин отличается от плохого не только ценами!
-            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-          </p>
+        <h3 class="benefits__section-heading heading section-heading--secondary">Сервисы</h3>
+        <p class="benefits__description">
+          Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+        </p>
+
+        <div class="benefits__row">
+          <ul class="benefits__features-list features-list">
+            <li class="features-list__item">
+              <button type="button" class="features-list__button">Доставка</button>
+            </li>
+            <li class="features-list__item">
+              <button type="button" class="features-list__button">Гарантия</button>
+            </li>
+            <li class="features-list__item">
+              <button type="button" class="features-list__button">Кредит</button>
+            </li>
+          </ul>
+          <div class="benefits__services benefits__services--delivery">
+            <h3 class="benefits__heading heading section-heading--secondary">Доставка</h3>
+            <p class="benefits__description">
+              Мы с удовольствием доставим ваш товар прямо
+              к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем,
+              поднимая его на ваш этаж!
+            </p>
+          </div>
         </div>
         <div class="benefits__row">
           <ul class="benefits__features-list features-list">
@@ -344,34 +348,36 @@
               <button type="button" class="features-list__button">Кредит</button>
             </li>
           </ul>
-
-          <div class="benefits__services">
-            <h3 class="benefits__heading heading section-heading--secondary">Доставка</h3>
-            <p class="benefits__description benefits__description--delivery">
-              Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем,
-              поднимая его на ваш этаж!
-            </p>
-          </div>
-          <!-- <div class="benefits__services">
-            <h3 class="benefits__heading heading section-heading--secondary">Доставка</h3>
-            <p class="benefits__description benefits__description--guarantee">
+          <div class="benefits__services benefits__services--guarantee">
+            <h3 class="benefits__heading heading section-heading--secondary">Гарантия</h3>
+            <p class="benefits__description">
               Если купленный у нас товар поломается или заискрит,
               а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей
               гарантии. Мы обменяем сгоревший товар на новый.
               Дом уж восстановите как-нибудь сами.
             </p>
           </div>
-          <div class="benefits__services">
+        </div>
+        <div class="benefits__row">
+          <ul class="benefits__features-list features-list">
+            <li class="features-list__item">
+              <button type="button" class="features-list__button">Доставка</button>
+            </li>
+            <li class="features-list__item">
+              <button type="button" class="features-list__button">Гарантия</button>
+            </li>
+            <li class="features-list__item">
+              <button type="button" class="features-list__button">Кредит</button>
+            </li>
+          </ul>
+          <div class="benefits__services benefits__services--loan">
             <h3 class="benefits__heading heading section-heading--secondary">Кредит</h3>
-            <p class="benefits__description benefits__description--loan">
+            <p class="benefits__description">
               Залезть в долговую яму стало проще!
               Кредитные консультанты придут вам на помощь.
             </p>
             <button class="benefits__button button button--red-static">Отправить заявку</button>
-          </div> -->
-
+          </div>
         </div>
       </div>
     </section>
@@ -412,12 +418,13 @@
           Вы можете забрать товар сами, заехав в наш офис:
         </p>
 
-        <button type="button" class="about__large-map-link">
+        <a class="about__large-map-link button--open" href="https://goo.gl/maps/1ebL3qQqHtJqpxy7A" target="_blank">
           <img src="img/map.jpg" alt="Карта расположения магазина по адресу Большая Конюшенная улица д. 19"
             class="about__image">
-        </button>
+        </a>
 
-        <button type="button" class="about__button button button--red">Заблудились? Напишите нам!</button>
+        <button type="button" class="about__button button button--red button--open">Заблудились? Напишите
+          нам!</button>
       </div>
     </section>
 
@@ -512,10 +519,11 @@
   <!-- contact-form -->
 
   <section class="contacts__form modal">
-    <div class="contact-form__top-container">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <button type="button" class="modal__close" aria-label="Закрыть"></button>
-      <form action="#" method="POST" class="contact-form">
+    <form action="#" method="POST" class="contact-form">
+      <div class="contact-form__top-container">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <button type="button" class="modal__close" aria-label="Закрыть"></button>
+
         <div class="contact-form__top">
           <div class="contact-form__input-wrapper">
             <label for="name" class="contact-form__label">Ваше имя:</label>
@@ -532,10 +540,10 @@
           <textarea name="message" id="message" cols="30" rows="7"
             class="contact-form__textarea">В свободной форме</textarea>
         </div>
-    </div>
-    <div class="contact-form__bottom">
-      <button type="submit" class="contact-form__button button button--red-static">отправить</button>
-    </div>
+      </div>
+      <div class="contact-form__bottom">
+        <button type="submit" class="contact-form__button button button--red-static">отправить</button>
+      </div>
     </form>
   </section>
 
@@ -547,6 +555,9 @@
       class="map-modal__image">
     <button type="button" class="map-modal__button modal__close" aria-label="Закрыть"></button>
   </section>
+  <script src="script.js"></script>
+  <!-- <script src="script-2.js"></script>
+  <script src="script-3.js"></script> -->
 </body>
 
 </html>

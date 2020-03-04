@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic"
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -27,20 +27,18 @@
           <label for="header-search" class="visually-hidden">Поиск</label>
           <input type="text" placeholder="Поиск" id="header-search" class="search-field__input" />
         </div>
-        <a href="#" class="header__utility-button">
+        <a href="#" class="header__utility-button header__utility-button--bookmark">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" class="header__icon">
             <path fill="#ffffff"
               d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z" />
           </svg>
-
           Закладки: 0
         </a>
-        <a href="#" class="header__utility-button header__utility-button--secondary">
+        <a href="#" class="header__utility-button header__utility-button--cart">
           <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="header__icon">
             <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
             <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" />
             <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
-
           Корзина: 0
         </a>
         <a href="#" class="header__utility-button header__utility-button--accent">
@@ -62,7 +60,7 @@
         </div>
         <div class="header__user-menu user-menu">
           <div class="user-menu__button authorization-button">
-            <a class="user-menu__profile-link">
+            <a href="#userpage" class="user-menu__profile-link">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"
                 class="user-menu__icon">
                 <path
@@ -70,7 +68,7 @@
               </svg>
               Равшан Джамшутович</a>
 
-            <a class="user-menu__exit-link">
+            <a href="#signout" class="user-menu__exit-link">
               <span class="visually-hidden">Выйти</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"
                 class="user-menu__icon">
@@ -238,7 +236,7 @@
             <li class="catalog__item catalog-list__item catalog-list__item--new-tag">
               <img src="img/item.jpg" alt="Перфоратор BOSCH BFG 3000" class="catalog-list__image" />
               <div class="catalog-list__wrapper">
-                <button class="catalog-list__button-hidden button button--green">
+                <button class="catalog-list__button-hidden button catalog-list__button-hidden--cart button--green">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                     class="catalog-list__cart-icon">
                     <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
@@ -246,7 +244,9 @@
                     <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                   </svg>
                   Купить</button>
-                <button class="catalog-list__button-hidden button button--green-border">В закладки</button>
+                <button
+                  class="catalog-list__button-hidden button catalog-list__button-hidden--bookmark button--green-border">В
+                  закладки</button>
               </div>
               <h3 class="catalog-list__heading">
                 Перфоратор BOSCH BFG 9000
@@ -260,7 +260,7 @@
             <li class="catalog__item catalog-list__item catalog-list__item--new-tag">
               <img src="img/item.jpg" alt="Перфоратор BOSCH BFG 3000" class="catalog-list__image" />
               <div class="catalog-list__wrapper">
-                <button class="catalog-list__button-hidden button button--green">
+                <button class="catalog-list__button-hidden button catalog-list__button-hidden--cart button--green">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                     class="catalog-list__cart-icon">
                     <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
@@ -268,7 +268,9 @@
                     <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                   </svg>
                   Купить</button>
-                <button class="catalog-list__button-hidden button button--green-border">В закладки</button>
+                <button
+                  class="catalog-list__button-hidden button catalog-list__button-hidden--bookmark button--green-border">В
+                  закладки</button>
               </div>
               <h3 class="catalog-list__heading">
                 Перфоратор BOSCH BFG 9000
@@ -282,7 +284,7 @@
             <li class="catalog__item catalog-list__item catalog-list__item--new-tag">
               <img src="img/item.jpg" alt="Перфоратор BOSCH BFG 3000" class="catalog-list__image" />
               <div class="catalog-list__wrapper">
-                <button class="catalog-list__button-hidden button button--green">
+                <button class="catalog-list__button-hidden button catalog-list__button-hidden--cart button--green">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                     class="catalog-list__cart-icon">
                     <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
@@ -290,7 +292,9 @@
                     <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                   </svg>
                   Купить</button>
-                <button class="catalog-list__button-hidden button button--green-border">В закладки</button>
+                <button
+                  class="catalog-list__button-hidden button catalog-list__button-hidden--bookmark button--green-border">В
+                  закладки</button>
               </div>
               <h3 class="catalog-list__heading">
                 Перфоратор BOSCH BFG 9000
@@ -304,7 +308,7 @@
             <li class="catalog__item catalog-list__item catalog-list__item--new-tag">
               <img src="img/item.jpg" alt="Перфоратор BOSCH BFG 3000" class="catalog-list__image" />
               <div class="catalog-list__wrapper">
-                <button class="catalog-list__button-hidden button button--green">
+                <button class="catalog-list__button-hidden button catalog-list__button-hidden--cart button--green">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                     class="catalog-list__cart-icon">
                     <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
@@ -312,7 +316,9 @@
                     <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                   </svg>
                   Купить</button>
-                <button class="catalog-list__button-hidden button button--green-border">В закладки</button>
+                <button
+                  class="catalog-list__button-hidden button catalog-list__button-hidden--bookmark button--green-border">В
+                  закладки</button>
               </div>
               <h3 class="catalog-list__heading">
                 Перфоратор BOSCH BFG 9000
@@ -326,7 +332,7 @@
             <li class="catalog__item catalog-list__item catalog-list__item--new-tag">
               <img src="img/item.jpg" alt="Перфоратор BOSCH BFG 3000" class="catalog-list__image" />
               <div class="catalog-list__wrapper">
-                <button class="catalog-list__button-hidden button button--green">
+                <button class="catalog-list__button-hidden button catalog-list__button-hidden--cart button--green">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                     class="catalog-list__cart-icon">
                     <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
@@ -334,7 +340,9 @@
                     <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                   </svg>
                   Купить</button>
-                <button class="catalog-list__button-hidden button button--green-border">В закладки</button>
+                <button
+                  class="catalog-list__button-hidden button catalog-list__button-hidden--bookmark button--green-border">В
+                  закладки</button>
               </div>
               <h3 class="catalog-list__heading">
                 Перфоратор BOSCH BFG 9000
@@ -348,7 +356,7 @@
             <li class="catalog__item catalog-list__item catalog-list__item--new-tag">
               <img src="img/item.jpg" alt="Перфоратор BOSCH BFG 3000" class="catalog-list__image" />
               <div class="catalog-list__wrapper">
-                <button class="catalog-list__button-hidden button button--green">
+                <button class="catalog-list__button-hidden button catalog-list__button-hidden--cart button--green">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                     class="catalog-list__cart-icon">
                     <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
@@ -356,7 +364,9 @@
                     <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                   </svg>
                   Купить</button>
-                <button class="catalog-list__button-hidden button button--green-border">В закладки</button>
+                <button
+                  class="catalog-list__button-hidden button catalog-list__button-hidden--bookmark button--green-border">В
+                  закладки</button>
               </div>
               <h3 class="catalog-list__heading">
                 Перфоратор BOSCH BFG 9000
@@ -370,7 +380,7 @@
             <li class="catalog__item catalog-list__item catalog-list__item--new-tag">
               <img src="img/item.jpg" alt="Перфоратор BOSCH BFG 3000" class="catalog-list__image" />
               <div class="catalog-list__wrapper">
-                <button class="catalog-list__button-hidden button button--green">
+                <button class="catalog-list__button-hidden button catalog-list__button-hidden--cart button--green">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                     class="catalog-list__cart-icon">
                     <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
@@ -378,7 +388,9 @@
                     <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                   </svg>
                   Купить</button>
-                <button class="catalog-list__button-hidden button button--green-border">В закладки</button>
+                <button
+                  class="catalog-list__button-hidden button catalog-list__button-hidden--bookmark button--green-border">В
+                  закладки</button>
               </div>
               <h3 class="catalog-list__heading">
                 Перфоратор BOSCH BFG 9000
@@ -392,7 +404,7 @@
             <li class="catalog__item catalog-list__item catalog-list__item--new-tag">
               <img src="img/item.jpg" alt="Перфоратор BOSCH BFG 3000" class="catalog-list__image" />
               <div class="catalog-list__wrapper">
-                <button class="catalog-list__button-hidden button button--green">
+                <button class="catalog-list__button-hidden button catalog-list__button-hidden--cart button--green">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                     class="catalog-list__cart-icon">
                     <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
@@ -400,7 +412,9 @@
                     <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                   </svg>
                   Купить</button>
-                <button class="catalog-list__button-hidden button button--green-border">В закладки</button>
+                <button
+                  class="catalog-list__button-hidden button catalog-list__button-hidden--bookmark button--green-border">В
+                  закладки</button>
               </div>
               <h3 class="catalog-list__heading">
                 Перфоратор BOSCH BFG 9000
@@ -414,7 +428,7 @@
             <li class="catalog__item catalog-list__item catalog-list__item--new-tag">
               <img src="img/item.jpg" alt="Перфоратор BOSCH BFG 3000" class="catalog-list__image" />
               <div class="catalog-list__wrapper">
-                <button class="catalog-list__button-hidden button button--green">
+                <button class="catalog-list__button-hidden button catalog-list__button-hidden--cart button--green">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                     class="catalog-list__cart-icon">
                     <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
@@ -422,7 +436,9 @@
                     <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                   </svg>
                   Купить</button>
-                <button class="catalog-list__button-hidden button button--green-border">В закладки</button>
+                <button
+                  class="catalog-list__button-hidden button catalog-list__button-hidden--bookmark button--green-border">В
+                  закладки</button>
               </div>
               <h3 class="catalog-list__heading">
                 Перфоратор BOSCH BFG 9000
@@ -566,6 +582,8 @@
     </div>
   </section>
 
+
+  <script src="script.js"></script>
 </body>
 
 </html>
