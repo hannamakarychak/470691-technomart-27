@@ -1141,6 +1141,10 @@ POPULAR-ITEMS SECTION  */
   justify-content: stretch;
 }
 
+.hidden {
+  display: none;
+}
+
 .benefits__features-list {
   flex-basis: 30%;
   padding: 0 0 99px;
