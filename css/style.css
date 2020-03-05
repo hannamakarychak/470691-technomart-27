@@ -159,7 +159,7 @@ a {
 
 .button--border-accent {
   min-height: 38px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   color: black;
   border: 1px solid #e5e5e5;
@@ -226,6 +226,22 @@ a {
   color: #000000;
   font-size: 18px;
   margin: 0;
+  list-style: none;
+}
+
+.unordered-list__item {
+  line-height: 20px;
+  position: relative;
+}
+
+.unordered-list__item::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -36px;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
 }
 
 .unordered-list__item:not(:last-child) {
@@ -798,7 +814,7 @@ HEADER   */
 .catalog,
 .breadcrumbs,
 .filters {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .catalog-list {
@@ -900,7 +916,7 @@ HEADER   */
 }
 
 .catalog-list__price {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   padding-left: 15px;
 }
@@ -1036,7 +1052,7 @@ HEADER   */
 POPULAR-ITEMS SECTION  */
 
 .popular-items {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   margin-top: 53px;
 }
 
@@ -1058,7 +1074,7 @@ POPULAR-ITEMS SECTION  */
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 219px;
+  width: 219px;
   min-height: 145px;
   margin-bottom: 20px;
   border: 1px solid #eaeaea;
@@ -1123,6 +1139,20 @@ POPULAR-ITEMS SECTION  */
   box-shadow: none;
 }
 
+.features-list__button--active {
+  color: #293449;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: none;
+}
+
+.features-list__button--active:hover {
+  color: #293449;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: none;
+}
+
 .features-list__button:focus {
   color: #32425c;
   background-color: #ffffff;
@@ -1173,7 +1203,7 @@ POPULAR-ITEMS SECTION  */
 }
 
 .benefits {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   background-color: #f4f7f9;
   padding: 65px 0 65px 0;
 }
@@ -1219,10 +1249,10 @@ POPULAR-ITEMS SECTION  */
 }
 
 .about__description {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
-  margin: 15px 0 27px;
+  margin: 15px 0 22px;
 }
 
 .about__description--narrow {
@@ -1242,8 +1272,13 @@ POPULAR-ITEMS SECTION  */
 }
 
 .about__button {
+  padding: 11px 40px;
   border: none;
   margin-top: 40px;
+}
+
+.about__contacts .about__button {
+  min-width: 300px;
 }
 
 /* MODALS CONTACT FORM */
@@ -1290,6 +1325,25 @@ POPULAR-ITEMS SECTION  */
   top: 50%;
   left: 50%;
   margin-left: -470px;
+  margin-top: -223px;
+}
+
+.map-modal__iframe {
+  position: relative;
+  z-index: 2;
+}
+
+.map-modal__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.map-modal__button {
+  z-index: 3;
 }
 
 .contact-form__top-container {
@@ -1310,7 +1364,7 @@ POPULAR-ITEMS SECTION  */
 
 .contact-form__input,
 .contact-form__textarea {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   padding: 13px 16px;
   color: #a9a9a9;
@@ -1550,7 +1604,7 @@ POPULAR-ITEMS SECTION  */
   max-width: 95px;
   min-height: 38px;
 
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   text-align: center;
   color: #283136;
@@ -1697,7 +1751,7 @@ POPULAR-ITEMS SECTION  */
 }
 
 .product-info__description {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 24px;
   font-size: 13px;
   margin: 0;
