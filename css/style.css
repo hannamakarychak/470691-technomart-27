@@ -826,7 +826,7 @@ HEADER   */
   margin-top: 20px;
 }
 
-.catalog-list__item {
+.item {
   width: 218px;
   height: 318px;
   font-weight: bold;
@@ -836,7 +836,7 @@ HEADER   */
   text-align: center;
 }
 
-.catalog-list__item--new-tag::after {
+.item--new-tag::after {
   position: absolute;
   content: "";
   width: 60px;
@@ -848,7 +848,7 @@ HEADER   */
   background-size: 100% 100%;
 }
 
-.catalog-list__item:not(:nth-child(4n)) {
+.item:not(:nth-child(4n)) {
   margin-right: 21px;
 }
 
@@ -868,19 +868,19 @@ HEADER   */
   background-color: white;
 }
 
-.catalog-list__cart-icon {
+.item__cart-icon {
   opacity: 0.3;
   position: absolute;
   left: 12px;
 }
 
-.catalog-list__button {
+.item__button {
   position: relative;
   width: 121px;
   padding: 11px 0;
 }
 
-.catalog-list__button::after {
+.item__button::after {
   position: absolute;
   content: "";
   top: 0;
@@ -892,43 +892,50 @@ HEADER   */
   border-bottom: 20px solid transparent;
 }
 
-.catalog-list__button-hidden {
+.item__heading {
+  padding: 0 5px;
+  text-align: center;
+  line-height: 20px;
+  margin: 10px 15px;
+}
+
+.item__button-hidden {
   position: relative;
   min-width: 135px;
   text-align: center;
   margin-bottom: 7px;
 }
 
-.catalog-list__button-hidden:hover .catalog-list__cart-icon {
+.item__button-hidden:hover .item__cart-icon {
   opacity: 1;
 }
 
-.catalog-list__item:hover {
+.item:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.catalog-list__item:hover .catalog-list__wrapper {
+.item:hover .catalog-list__wrapper {
   display: block;
 }
 
-.catalog-list__item:hover .catalog-list__image {
+.item:hover .item__image {
   visibility: hidden;
 }
 
-.catalog-list__price {
+.item__price {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   padding-left: 15px;
 }
 
-.catalog-list__price-sale {
+.item__price-sale {
   font-size: 17px;
   color: #a9a9a9;
   text-decoration: line-through;
   margin-bottom: 12px;
 }
 
-.catalog-list__item .button--green:active {
+.item .button--green:active {
   color: white;
 }
 
@@ -1714,16 +1721,12 @@ POPULAR-ITEMS SECTION  */
   flex-basis: 700px;
 }
 
-.catalog .catalog-list__item:nth-child(3n) {
+.catalog .item:nth-child(3n) {
   margin-right: 0;
 }
 
-.popular-items__list .catalog-list__item:nth-child(4n) {
+.popular-items__list .item:nth-child(4n) {
   margin-right: 0;
-}
-
-.catalog__item {
-  margin-right: 21px;
 }
 
 .page-number {

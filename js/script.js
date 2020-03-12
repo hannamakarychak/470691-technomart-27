@@ -1,6 +1,6 @@
 // CART BUTTON COLOR CHANGE
 const bookmarkButtonsArray = Array.prototype.slice.call(
-  document.querySelectorAll(".catalog-list__button-hidden--bookmark")
+  document.querySelectorAll(".item__button-hidden--bookmark")
 );
 
 bookmarkButtonsArray.forEach(function(bookmarkButton) {
@@ -14,7 +14,7 @@ bookmarkButtonsArray.forEach(function(bookmarkButton) {
 });
 
 const cartButtonsArray = Array.prototype.slice.call(
-  document.querySelectorAll(".catalog-list__button-hidden--cart")
+  document.querySelectorAll(".item__button-hidden--cart")
 );
 
 cartButtonsArray.forEach(function(cartButton) {
